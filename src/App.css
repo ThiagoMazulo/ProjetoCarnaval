@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.background {
+  background-color: #fff;
+}
+.head {
+  height: 538px;
+  max-width: 1920px;
+  background-color: #f8f8ff;
+}
+.main-title {
+  padding-top: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  font-size: 20px;
+  text-align: center;
+}
+.left-img {
+  left: 0;
+  position: absolute;
+}
+
+.rigth-img {
+  position: absolute;
+  right: 0;
+  bottom: 44%;
+}
+.title1 {
+  color: red;
+  gap: 10px;
+}
+.melhoresBlocos {
+  color: #6246ea;
+  bottom: 30%;
+}
+.campus {
+  margin: 76px 220px 0 auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 40px;
+  width: 62rem;
+  gap: 24px;
+
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+}
+input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 8px 12px 14px;
+  border: none;
+
+  width: 348px;
+  height: 48px;
+
+  background: #f4f4ff;
+  border-radius: 5px;
+}
+.bucar-agora {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 32px;
+  color: #ffffff;
+  border: none;
+
+  width: 169px;
+  height: 48px;
+
+  background: #6246ea;
+  border-radius: 5px;
+}
+.nav {
+  padding-top: 70px;
+  margin-left: 60px;
+  margin-right: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttons-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px #eaeaea;
+  background-color: #ffffff;
+  width: 200px;
+  height: 52px;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+}
+.lista {
+  width: 86px;
+  height: 32px;
+  border-radius: 5px;
+  border: none;
+  background-color: #6246ea;
+  color: #fff;
+  font-style: Bold;
+}
+.mapa { 
+  width: 86px;
+  height: 32px;
+  border-radius: 5px;
+  border: none;
+  color:#6246ea;
+  background-color: #ffffff;
+  font-style: bold;
+  font-family: 'Roboto';  
+}
+
