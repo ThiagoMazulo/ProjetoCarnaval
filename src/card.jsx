@@ -1,14 +1,16 @@
 import React from "react";
-import img1 from "./assets/img1.png"
+import local from "./assets/local.png";
 
-export default function Card() {
-    return (
-
-        <div>
-        <img src={img1} />
-        <h3>O Python do vovô não sobe mais</h3>
-        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
-        </div>
-    );
-
-};
+export default function Card({ title, summary, location, img }) {
+  return (
+    <div className="card1">
+      <img className="img1" src={img} />
+      <h3>{title}</h3>
+      <p>{summary}</p>
+      <div>
+        <img src={local} />
+        <span>{location}</span>
+      </div>
+    </div>
+  );
+}

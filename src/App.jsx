@@ -3,6 +3,8 @@ import g8 from "./assets/g8.png";
 import g9 from "./assets/g9.svg";
 import "./App.css";
 import Card from "./card";
+import { location } from "./utils/cards";
+import local from "./assets/local.png";
 
 function App() {
   return (
@@ -24,12 +26,14 @@ function App() {
             </h1>
           </div>
           <div className="campus">
-            <input type="text" placeholder="pesquise por nome" />
+            <input
+            type="text"
+            placeholder="pesquise por nome" />
             <input
               type="search"
               name=""
               id=""
-              placeholder="Selecione sua cidade"
+              placeholder="Selecione sua cidade" 
             />
             <button className="bucar-agora">BUSCAR AGORA</button>
           </div>
@@ -37,15 +41,22 @@ function App() {
         <body>
           <nav className="nav">
             <h2>Blocos recomendados</h2>
-            <div className= "buttons-right">
+            <div className="buttons-right">
               <button className="lista">LISTA</button>
               <button className="mapa">MAPA</button>
             </div>
           </nav>
           <div>
-            <main>
-              <Card/>
-              
+            <main className="countener-card">
+              {location.map((item, index) => (
+                <Card
+                  key={index}
+                  location={item.location}
+                  title={item.title}
+                  summary={item.summary}
+                  img={item.img}
+                />
+              ))}
             </main>
           </div>
         </body>

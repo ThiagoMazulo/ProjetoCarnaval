@@ -9,6 +9,7 @@
   background-color: #fff;
 }
 .head {
+  position: relative;
   height: 538px;
   max-width: 1920px;
   background-color: #f8f8ff;
@@ -30,7 +31,8 @@
 .rigth-img {
   position: absolute;
   right: 0;
-  bottom: 44%;
+  bottom: 0;
+  
 }
 .title1 {
   color: red;
@@ -41,7 +43,8 @@
   bottom: 30%;
 }
 .campus {
-  margin: 76px 220px 0 auto;
+  margin: 0 auto;
+  margin-top: 40px;
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -120,4 +123,23 @@ input {
   font-style: bold;
   font-family: 'Roboto';  
 }
+.card1 {
+  margin-bottom: 20px;
+  width: 384px;
+  height: 323px;
+  border-radius: 10px;
+  margin-left: 30px;
+  gap: 16px;
+  border-radius: 1px solid #EAEAEA ;
+  background-color: #EAEAEA;
 
+}
+.countener-card {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.img1 {
+  border-radius: 10px 10px 0 0;
+}
