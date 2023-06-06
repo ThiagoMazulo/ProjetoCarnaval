@@ -17,26 +17,25 @@ function App() {
           <div className="rigth-img">
             <img src={g9} />
           </div>
-          <div className="main-title">
+          <section className="main-title">
             <span className="title1">FIND YOUR BLOCK</span>
             <h1>
               Encontre os{" "}
               <span className="melhoresBlocos"> melhores blocos</span> <br /> de
               carnaval de 2023
             </h1>
-          </div>
+          
           <div className="campus">
-            <input
-            type="text"
-            placeholder="pesquise por nome" />
+            <input type="text" placeholder="pesquise por nome" />
             <input
               type="search"
               name=""
               id=""
-              placeholder="Selecione sua cidade" 
+              placeholder="Selecione sua cidade"
             />
             <button className="bucar-agora">BUSCAR AGORA</button>
           </div>
+          </section>
         </header>
         <body>
           <nav className="nav">

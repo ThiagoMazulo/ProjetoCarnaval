@@ -15,25 +15,35 @@
   background-color: #f8f8ff;
 }
 .main-title {
-  padding-top: 85px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 18px;
   font-size: 20px;
   text-align: center;
+  position: relative;
+  z-index: 2;
+  height: 100%;
 }
+
 .left-img {
   left: 0;
   position: absolute;
+  z-index: 1;
 }
 
 .rigth-img {
   position: absolute;
-  right: 0;
   bottom: 0;
-  
+  right: 0;
+  z-index: 1;
 }
+
+.rigth-img img {
+  display: block;
+}
+
 .title1 {
   color: red;
   gap: 10px;
@@ -43,16 +53,17 @@
   bottom: 30%;
 }
 .campus {
-  margin: 0 auto;
-  margin-top: 40px;
-  background-color: #ffffff;
+  width: 62rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  margin: 0 auto;
+  margin-top: 40px;
   padding: 40px;
-  width: 62rem;
   gap: 24px;
+  position: relative;
 
+  background-color: #ffffff;
   border: 1px solid #eaeaea;
   border-radius: 10px;
 }
@@ -125,21 +136,39 @@ input {
 }
 .card1 {
   margin-bottom: 20px;
-  width: 384px;
+  width: 385px;
   height: 323px;
   border-radius: 10px;
   margin-left: 30px;
   gap: 16px;
-  border-radius: 1px solid #EAEAEA ;
-  background-color: #EAEAEA;
+  background-color: #FFFFFF;
+  border: 1px solid #EAEAEA;
 
 }
 .countener-card {
   display: flex;
   flex-wrap: wrap;
-
+  padding-top: 45px;
 }
 
 .img1 {
   border-radius: 10px 10px 0 0;
+}
+h3 {
+  padding: 15px 0 15px 20px;
+}
+.card1 p {
+  margin: 0 12px 10px 20px;
+}
+.card1 span {
+  margin-left: 10px;
+}
+.location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 10px;
+}
+.local {
+  margin-left: 10px;
 }
