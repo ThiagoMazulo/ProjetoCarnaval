@@ -1,6 +1,8 @@
 import React from "react";
 import local from "./assets/local.png";
 import "./App.css";
+
+
 export default function Card({ title, summary, location, img }) {
   return (
     <div className="card1">

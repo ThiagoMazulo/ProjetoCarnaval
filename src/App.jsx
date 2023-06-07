@@ -1,12 +1,15 @@
 import React from "react";
+import Input from "./input";
+import { useState } from "react";
 import g8 from "./assets/g8.png";
 import g9 from "./assets/g9.svg";
 import "./App.css";
 import Card from "./card";
 import { location } from "./utils/cards";
-import local from "./assets/local.png";
 
 function App() {
+  const [titular, setTitular] = useState("");
+
   return (
     <>
       <div className="background">
@@ -24,17 +27,28 @@ function App() {
               <span className="melhoresBlocos"> melhores blocos</span> <br /> de
               carnaval de 2023
             </h1>
-          
-          <div className="campus">
-            <input type="text" placeholder="pesquise por nome" />
-            <input
-              type="search"
-              name=""
-              id=""
-              placeholder="Selecione sua cidade"
-            />
-            <button className="bucar-agora">BUSCAR AGORA</button>
-          </div>
+
+            <div className="campus">
+              <Input
+                type="text"
+                id="nome-titular"
+                placeholder="pesquise por nome"
+                value={titular}
+                onChange={(e) => setTitular(e.target.value)}
+                maxLength={30}
+              />
+              <select className="select-city" name="select">
+                <option value="valor1">Rio de Janeiro</option>
+                <option value="valor2" selected>
+                  São Paulo
+                </option>
+                <option value="valor3">Fortaleza</option>
+                <option value="valor4">Curitiba</option>
+                <option value="valor4">Salvador</option>
+              </select>
+
+              <button className="bucar-agora">BUSCAR AGORA</button>
+            </div>
           </section>
         </header>
         <body>

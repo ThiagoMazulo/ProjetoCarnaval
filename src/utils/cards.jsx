@@ -1,5 +1,12 @@
 import img1 from "../assets/img1.png"
 import todoMundo from "../assets/todoMundo.png"
+import excepcion from "../assets/excepcion.png"
+import mandaNode from "../assets/mandaNode.png"
+import backEnd from "../assets/backEnd.png"
+import trompete from "../assets/trompete.png"
+import pimenta from "../assets/pimenta.png" 
+import cache from "../assets/cache.png"
+import javali from "../assets/javali.png"
 
 export const location = [
     {
@@ -18,46 +25,43 @@ export const location = [
         title: "Hoje dou exception",
         summary: "Neste sentido, a contínua expansão de nossa atividade representa uma abertura para a melhoria dos paradigmas corporativos.",
         location: "Curitiba-PR",
-        img: img1
+        img: excepcion
     },
     {
         title: "Manda Node",
         summary: "Neste sentido, a contínua expansão de nossa atividade representa uma abertura para a melhoria dos paradigmas corporativos.",
         location: "Salvador-BA",
-        img: img1
+        img: mandaNode
     },
     {
         title: "Só no back-end",
         summary: "Neste sentido, a contínua expansão de nossa atividade representa uma abertura para a melhoria dos paradigmas corporativos.",
         location: "São Paulo-SP",
-        img: img1
+        img: backEnd
     },
     {
         title: "Esse anel não é de Ruby",
         summary: "Neste sentido, a contínua expansão de nossa atividade representa uma abertura para a melhoria dos paradigmas corporativos.",
         location: "São Paulo-SP",
-        img: img1
+        img: trompete
     },
     {
         title: "Pimenta no C# dos outros é refresco",
         summary: "Neste sentido, a contínua expansão de nossa atividade representa uma abertura para a melhoria dos paradigmas corporativos.",
         location: "Rio de Janeiro-RJ",
-        img: img1
+        img: pimenta
     },
     {
         title: "EnCACHE aqui",
         summary: "Neste sentido, a contínua expansão de nossa atividade representa uma abertura para a melhoria dos paradigmas corporativos.",
         location: "São Paulo",
-        img: img1
+        img: cache
     },
     {
         title: "Não valho mas JAVA li",
         summary: "Neste sentido, a contínua expansão de nossa atividade representa uma abertura para a melhoria dos paradigmas corporativos.",
         location: "São Paulo",
-        img: img1
+        img: javali
     },
-    
-    
-    
 
     ]

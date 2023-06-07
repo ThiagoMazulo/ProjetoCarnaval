@@ -80,6 +80,19 @@ input {
   background: #f4f4ff;
   border-radius: 5px;
 }
+.select-city {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 8px 12px 14px;
+  border: none;
+
+  width: 348px;
+  height: 48px;
+
+  background: #f4f4ff;
+  border-radius: 5px;
+}
 .bucar-agora {
   display: flex;
   flex-direction: row;
@@ -107,30 +120,37 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  margin-right: 111px;
+  height: 52px;
+  width: 200px;
   gap: 5px;
+
   border: 1px #eaeaea;
   background-color: #ffffff;
-  width: 200px;
-  height: 52px;
-  border-radius: 6px;
   border: 1px solid #eaeaea;
+  border-radius: 6px;
 }
 .lista {
   width: 86px;
   height: 32px;
   border-radius: 5px;
+
   border: none;
   background-color: #6246ea;
   color: #fff;
+
   font-style: Bold;
 }
 .mapa { 
   width: 86px;
   height: 32px;
   border-radius: 5px;
+
   border: none;
   color:#6246ea;
   background-color: #ffffff;
+
   font-style: bold;
   font-family: 'Roboto';  
 }
@@ -148,12 +168,18 @@ input {
 .countener-card {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 25px;
   padding-top: 45px;
 }
 
 .img1 {
   border-radius: 10px 10px 0 0;
 }
+.img1:hover {
+  background-color: #a0a0a0;
+}
+
+
 h3 {
   padding: 15px 0 15px 20px;
 }
