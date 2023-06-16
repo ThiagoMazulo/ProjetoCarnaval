@@ -6,9 +6,12 @@ import g9 from "./assets/g9.svg";
 import "./App.css";
 import Card from "./card";
 import { location } from "./utils/cards";
+import local from "./assets/local.png";
+
 
 function App() {
   const [titular, setTitular] = useState("");
+  const [selectedBlock, setSelectedBlock] = useState("list");
 
   return (
     <>
@@ -24,7 +27,7 @@ function App() {
             <span className="title1">FIND YOUR BLOCK</span>
             <h1>
               Encontre os{" "}
-              <span className="melhoresBlocos"> melhores blocos</span> <br /> de
+              <span className="melhoresBlocos"> melhores blocos</span> <br/> de
               carnaval de 2023
             </h1>
 
@@ -32,21 +35,23 @@ function App() {
               <Input
                 type="text"
                 id="nome-titular"
-                placeholder="pesquise por nome"
+                placeholder="Pesquise por nome"
                 value={titular}
                 onChange={(e) => setTitular(e.target.value)}
                 maxLength={30}
               />
-              <select className="select-city" name="select">
-                <option value="valor1">Rio de Janeiro</option>
-                <option value="valor2" selected>
-                  São Paulo
-                </option>
-                <option value="valor3">Fortaleza</option>
-                <option value="valor4">Curitiba</option>
-                <option value="valor4">Salvador</option>
-              </select>
-
+              <div className="select-input">
+                <img className="local-input" src={local}/>
+                 <select>
+                   <option value="valor1">Rio de Janeiro</option>
+                    <option value="valor2" selected>
+                   São Paulo
+                  </option>
+                   <option value="valor3">Fortaleza</option>
+                    <option value="valor4">Curitiba</option>
+                    <option value="valor4">Salvador</option>
+               </select>
+              </div>
               <button className="bucar-agora">BUSCAR AGORA</button>
             </div>
           </section>
@@ -55,8 +60,17 @@ function App() {
           <nav className="nav">
             <h2>Blocos recomendados</h2>
             <div className="buttons-right">
-              <button className="lista">LISTA</button>
-              <button className="mapa">MAPA</button>
+              <button
+                onClick={() => setSelectedBlock("list")}
+                className={`blockButton ${ selectedBlock === "list" ? "selected" : " "}`}>
+                LISTA
+              </button>
+              <button
+                onClick={() => setSelectedBlock("map")}
+                className={`blockButton ${ selectedBlock === "map" ? "selected" : " "}`}
+              >
+                MAPA
+              </button>
             </div>
           </nav>
           <div>
@@ -79,3 +93,5 @@ function App() {
 }
 
 export default App;
+
+
